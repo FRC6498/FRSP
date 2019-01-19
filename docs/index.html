@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- <title>First Robotics Scouting Program</title> -->
-	<link rel="stylesheet" href="style.css">
-    <meta charset="utf-8"/>
-  </head>
-  <body>
-      <div id="info">
-        <label for="team">4-digit Team Number: </label>
-        <input type="text" name="team">
-        <label for="match">Match Number: </label>
-        <input type="text" name="match">
-        <!-- <label for="score">Total Score: </label>
-        <input type="text" name="score"> -->
-      </div>
-      <br>
-      <div id="sandstorm">
+	<head>
+		<!-- <title>First Robotics Scouting Program</title> -->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:bold">
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<div id="teamnum">
+			<label for="team">4-digit Team Number: </label>
+			<input type="text" name="team">
+		</div>
+		<div id="matchnum">
+			<label for="match">Match Number: </label>
+			<input type="text" name="match">
+			<!-- <label for="score">Total Score: </label>
+			<input type="text" name="score"> -->
+		</div>
+		<br>
+		<div id="sandstorm">
 
-	    <h4>sandstorm</h4>
+			<h4>sandstorm</h4>
 
-	    <div id="crossline">
-		    <label for="cross">Crossed Line?</label><br>
-		    <label for="yes">Yes</label>
-		    <input type="radio" name="cross" id="yes" value="yes">
-		    <label for="no">No</label>
-		    <input type="radio" name="cross" id="no" value="no">
-        </div>
-    	<div id="anihatch">
-    		<button type="button">-Hatch-</button>
-    		<button type="button">+Hatch+</button>
-    		<label for="+Hatch+">0</label>
-    	</div>
-    	<div id="anicargo">
-    		<button type="button">-Cargo-</button>
-    		<button type="button">+Cargo+</button>
-    		<label for="+cargo+">0</label>
-    	</div>
-    </div>
+			<div id="crossline">
+				<label for="cross">Crossed Line?</label><br>
+				<label for="yes">Yes</label>
+				<input type="radio" name="cross" id="yes" value="yes">
+				<label for="no">No</label>
+				<input type="radio" name="cross" id="no" value="no">
+			</div>
+			<div id="anihatch">
+				<button type="button" onclick="buttonClick(hatchInc)">-Hatch-</button>
+				<button type="button">+Hatch+</button>
+				<label id="hatchInc" for="+Hatch+">0</label>
+			</div>
+			<div id="anicargo">
+				<button type="button">-Cargo-</button>
+				<button type="button">+Cargo+</button>
+				<label for="+cargo+">0</label>
+			</div>
+		</div>
     <div id="teleop">
 	    <h4>Teleop</h4>
         <div id="hatches">
     		<h5>Hatches</h5>
     		<button type="button">-Top-</button>
-    		<button type="button" onClick="incrementValue(tHatch)">+Top+</button>
+    		<button type="button" onclick="incrementValue(tHatch)">+Top+</button>
     		<label id="tHatch" for="+Top+">0</label>
     		<br>
     		<button type="button">-Mid-</button>
@@ -68,30 +72,6 @@
     		<label for="+Low+">0</label>
         </div>
     </div>
-	<script>
-        $(".button").on("click", function() 
-        {
-            var $button = $(this);
-            var oldValue = $button.parent().find("input").val();
-            
-            if ($button.text() == "+") 
-            {
-            	var newVal = parseFloat(oldValue) + 1;
-            } 
-            else 
-            {
-               // Don't allow decrementing below zero
-                if (oldValue > 0) 
-                {
-                  var newVal = parseFloat(oldValue) - 1;
-                } 
-                else 
-                {
-                  newVal = 0;
-                }
-            }
-            $button.parent().find("input").val(newVal);
-        });
-    </script>
+	<script src="functions.js"></script>
   </body>
 </html>
