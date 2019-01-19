@@ -6,5 +6,5 @@ function buttonClick(id)
 }
 function saveData()
 {		
-	localStorage.setItem('team', );
+	localStorage.setItem('team', teamnum);
 }

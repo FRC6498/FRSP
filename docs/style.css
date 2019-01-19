@@ -9,7 +9,10 @@ body{
 	margin-top: 5%;
 }
 
-
+#submit{
+	margin-left: 50%;
+	margin-right: 50%;
+}
 #teamnum{
 	margin-left: 7%;
 	float: left;
