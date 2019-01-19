@@ -69,5 +69,19 @@
 
       </div>
       
+	<script>
+        function incrementValue(id)
+        {
+            var value = parseInt(document.getElementById(id).value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById(id).value = value;
+        }
+        function decrementValue(int num, string id)
+        {
+            num--;
+            document.getElementById(id).value = num;
+        }
+        </script>
   </body>
 </html>
