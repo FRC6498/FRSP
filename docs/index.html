@@ -42,8 +42,8 @@
         <div id="hatches">
     		<h5>Hatches</h5>
     		<button type="button">-Top-</button>
-    		<button type="button">+Top+</button>
-    		<label for="+Top+">0</label>
+    		<button type="button" onClick="incrementValue(tHatch)">+Top+</button>
+    		<label id="tHatch" for="+Top+">0</label>
     		<br>
     		<button type="button">-Mid-</button>
     		<button type="button">+Mid+</button>
@@ -68,20 +68,30 @@
     		<label for="+Low+">0</label>
         </div>
     </div>
-      
 	<script>
-        function incrementValue(id)
+        $(".button").on("click", function() 
         {
-            var value = parseInt(document.getElementById(id).value, 10);
-            value = isNaN(value) ? 0 : value;
-            value++;
-            document.getElementById(id).value = value;
-        }
-        function decrementValue(int num, string id)
-        {
-            num--;
-            document.getElementById(id).value = num;
-        }
+            var $button = $(this);
+            var oldValue = $button.parent().find("input").val();
+            
+            if ($button.text() == "+") 
+            {
+            	var newVal = parseFloat(oldValue) + 1;
+            } 
+            else 
+            {
+               // Don't allow decrementing below zero
+                if (oldValue > 0) 
+                {
+                  var newVal = parseFloat(oldValue) - 1;
+                } 
+                else 
+                {
+                  newVal = 0;
+                }
+            }
+            $button.parent().find("input").val(newVal);
+        });
     </script>
   </body>
 </html>
