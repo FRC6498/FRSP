@@ -35,20 +35,22 @@
       <div id="teleop">
 	<h4>Teleop</h4>
           <div id="hatches">
-		<button type="button">-hatch-</button>
-		<button type="button">+hatch+</button>
+		<button type="button" name="hatchdec">-hatch-</button>
+		<button type="button" name="hatchinc">+hatch+</button>
           </div>
           <div id="cargo">
-           	<button type="button">-cargo-</button>
-		<button type="button">+cargo+</button>
+           	<button type="button" name="cargodec" onclick="incrementValue()">-cargo-</button>
+		<button type="button" name="cargoinc">+cargo+</button>
           </div>
 
       </div>
 	  <script>
-        function incrementValue(int num, string id)
+        function incrementValue(id)
         {
-            num++;
-            document.getElementById(id).value = num;
+            var value = parseInt(document.getElementById(id).value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById(id).value = value;
         }
         function decrementValue(int num, string id)
         {
