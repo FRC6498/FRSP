@@ -1,8 +1,8 @@
 var i = 0;
 var teamnum;
-function buttonClick(id) 
+function buttonClick() 
 {
-	document.getElementById(id).value = ++i;
+	document.getElementById("thatch").value = ++i;
 }
 function saveData()
 {		
