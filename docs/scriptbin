@@ -1,14 +1,23 @@
-<script>
-        function incrementValue(id)
+$(".button").on("click", function() 
         {
-            var value = parseInt(document.getElementById(id).value, 10);
-            value = isNaN(value) ? 0 : value;
-            value++;
-            document.getElementById(id).value = value;
-        }
-        function decrementValue(int num, string id)
-        {
-            num--;
-            document.getElementById(id).value = num;
-        }
-        </script>
+            var $button = $(this);
+            var oldValue = $button.parent().find("input").val();
+            
+            if ($button.text() == "+") 
+            {
+            	var newVal = parseFloat(oldValue) + 1;
+            } 
+            else 
+            {
+               // Don't allow decrementing below zero
+                if (oldValue > 0) 
+                {
+                  var newVal = parseFloat(oldValue) - 1;
+                } 
+                else 
+                {
+                  newVal = 0;
+                }
+            }
+            $button.parent().find("input").val(newVal);
+        });

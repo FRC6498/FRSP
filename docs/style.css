@@ -1,23 +1,38 @@
 @charset "utf-8";
+
 /* CSS Document */
 
 body{
-
+    background-color: Black;
+    color: #ffffff;
+	font-family: Open Sans;
+	margin-top: 5%;
 }
 
+#submit{
+	margin-left: 50%;
+	margin-right: 50%;
+}
+#teamnum{
+	margin-left: 7%;
+	float: left;
+	margin-top: -3%;
+}
 
-#info{
-
+#matchnum{
+	margin-right: 7%;
+	float: right;
+	margin-top: -3%;
 }
 
 
 #sandstorm{
-
+	font-style: bold;
 }
 
 
 #crossline{
-
+	font-style: bold;
 }
 
 
@@ -27,7 +42,7 @@ body{
 
 
 #anicargo{
-margin-top:10px;
+ margin-top:10px;
 }
 
 
