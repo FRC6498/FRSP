@@ -1,9 +1,9 @@
 var i = 0;
 var counter = 0;
 var teamnum;
-function buttonClick() 
+function increment(id)
 {
-	document.getElementById("thatch").value = ++i;
+    document.getElementById(id).value = ++i;
 }
 function saveData()
 {		
