@@ -4,6 +4,7 @@ var teamnum;
 function increment(id)
 {
     document.getElementById(id).value = ++i;
+	console.log("I'm an incrementer");
 }
 function saveData()
 {		
