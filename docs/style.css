@@ -6,32 +6,26 @@ body{
     background-color: Black;
     color: #ffffff;
 	/* font-family: Open Sans; */
-	
-	margin-top: 5%;
+	font-family: monospace;
+	margin-top: 0%;
 }
 
 h1 {
 	text-align: center;
-	font-family: monospace;
-	font-size: 50vw;
+	font-size: 3vw;
 }
 
 #submit{
 	margin-left: 50%;
 	margin-right: 50%;
 }
-#teamnum{
-	margin-left: 7%;
-	float: left;
-	margin-top: -3%;
+.basicinfo{
+	float: none;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1vw;
 }
-
-#matchnum{
-	margin-right: 7%;
-	float: right;
-	margin-top: -3%;
-}
-
 
 #sandstorm{
 	font-style: bold;
