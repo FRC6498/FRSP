@@ -8,6 +8,7 @@ body{
 	/* font-family: Open Sans; */
 	font-family: monospace;
 	margin-top: 0%;
+	
 	background-repeat: no-repeat;
 	background-size: 200vh;
 	background-image: url(https://pixnio.com/free-images/2017/09/07/2017-09-07-07-28-13-1100x728.jpg);
@@ -19,30 +20,50 @@ h1 {
 	font-style: bold;
 }
 
-h3 {
-	text-align: left;
-		
-}
-
 input[type="radio"] {
 	-ms-transform: scale(2);
 	-webkit-transform: scale(2);
 }
+.container {
+	position: relative;
+	text-align: center;
+	display: block;
+}
 
+.enter {
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-top: 15%;
+}
+.enter > button{ 
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2);
+}
 .info{
 	margin-left: 25%;
 	margin-right: 25%;
 	font-size: 1.5vw;
 }
-
 .sandstorm{
+	text-align: left;
+	display: inline-block;
 	font-size: 1.9vw;
-	margin-top: 3%;
-	margin-left: 3%;
 	font-style: bold;
+	width: 33%;
 }
 
-
+.teleop {
+	text-align: center;
+	display: inline-block;
+	font-size: 1.9vw;
+	width: 33%;
+}
+#hatchCount,#cargoCount {
+	margin-left: 25px;
+}
+#incHatch,#incCargo {
+	margin-left: 25px;
+}
 .line {
 	font-style: bold;
 	text-decoration: none !important;
@@ -52,28 +73,12 @@ input[type="radio"] {
 	-ms-transform: scale(2);
 	-webkit-transform: scale(2);
 }
-#yesLabel {
+
+.autocargo > button{ 
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2);
+}
+
+#yesLabel,#noLabel {
 	font-style: italic;
-}
-
-#noLabel {
-	font-style: italic;
-}
-
-
-#anicargo{
- margin-top:10px;
-}
-
-#hatches{
-width:auto;
-height:200px;
-float:left;
-}
-
-#cargo{
-width:auto;
-height:200px;
-margin-left:20px;
-float:left;
 }
