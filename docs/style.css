@@ -8,37 +8,56 @@ body{
 	/* font-family: Open Sans; */
 	font-family: monospace;
 	margin-top: 0%;
+	background-repeat: no-repeat;
+	background-size: 200vh;
+	background-image: url(https://pixnio.com/free-images/2017/09/07/2017-09-07-07-28-13-1100x728.jpg);
 }
 
 h1 {
 	text-align: center;
 	font-size: 3vw;
+	font-style: bold;
 }
 
-#submit{
-	margin-left: 50%;
-	margin-right: 50%;
-}
-.basicinfo{
-	float: none;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 1vw;
+h3 {
+	text-align: left;
+		
 }
 
-#sandstorm{
+input[type="radio"] {
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2);
+}
+
+.info{
+	margin-left: 25%;
+	margin-right: 25%;
+	font-size: 1.5vw;
+}
+
+.sandstorm{
+	font-size: 1.9vw;
+	margin-top: 3%;
+	margin-left: 3%;
 	font-style: bold;
 }
 
 
-#crossline{
+.line {
 	font-style: bold;
+	text-decoration: none !important;
 }
 
+.autohatch > button{ 
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2);
+}
+#yesLabel {
+	font-style: italic;
+}
 
-#anihatch{
-
+#noLabel {
+	font-style: italic;
 }
 
 
@@ -46,18 +65,11 @@ h1 {
  margin-top:10px;
 }
 
-
-#teleop{
-
-}
-
-
 #hatches{
 width:auto;
 height:200px;
 float:left;
 }
-
 
 #cargo{
 width:auto;

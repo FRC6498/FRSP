@@ -16,11 +16,31 @@
 			<h1 class="title">First Robotics Scouting Program</h1>
 		</header>
 		<main>
-			<div class="basicinfo">
-				<label for="team">Team Number: </label>
-				<input type="text" name="team">
-				<label for="match">Match Number: </label>
-				<input type="text" name="match">
+			<div class="info">
+				<span id="teamtag">
+					<label for="team">Team Number: </label>
+					<input type="text" name="team">
+				</span>
+				<span id="matchtag">
+					<label for="match">Match Number: </label>
+					<input type="text" name="match">
+				</span>
+			</div>
+			<div class="sandstorm">
+				<h3 style="text-decoration: underline;">Sandstorm</h3>
+				<div class="line">
+					<label for="cross">Crossed Line?</label><br>
+					<label id="yesLabel" for="yes" style>Yes</label>
+					<input type="radio" name="cross" id="yes" value="yes">
+					<label id="noLabel" for="no">No</label>
+					<input type="radio" name="cross" id="no" value="no">
+				</div>
+				<br>
+				<div class="autohatch">
+					<button id="decHatch" type="button">-Hatch-</button>
+					<button id="incHatch" type="button">+Hatch+</button>
+					<label id="hatchCount" for="-Hatch-">0</label>
+				</div>
 			</div>
 		</main>
 	</body>
