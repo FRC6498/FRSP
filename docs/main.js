@@ -1,3 +1,4 @@
+/*
 var i = 0;
 var counter = 0;
 var teamnum;
@@ -10,3 +11,5 @@ function saveData()
 {		
 	localStorage.setItem('team', teamnum);
 }
+*/
+
