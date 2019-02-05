@@ -69,12 +69,7 @@ input[type="radio"] {
 	text-decoration: none !important;
 }
 
-.autohatch > button{ 
-	-ms-transform: scale(2);
-	-webkit-transform: scale(2);
-}
-
-.autocargo > button{ 
+.mainbutton { 
 	-ms-transform: scale(2);
 	-webkit-transform: scale(2);
 }
