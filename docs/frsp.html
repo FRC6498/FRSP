@@ -11,7 +11,7 @@
 		<meta name="author" content="EJ Braswell and Ryan Maxwell">
 		<meta name="description" content="A web-based scouting program designed to run locally via network hub and work on almost all browsers">
 	</head>
-	<body>
+	<body onload="Start()">
 		<header>
 			<h1 class="title">First Robotics Scouting Program</h1>
 			<div class="info">
@@ -27,27 +27,20 @@
 		</header>
 		<main>
 			<div class="container" style="width:100%;height:100%;">
-				<div class="sandstorm">
-					<h3 style="text-decoration: underline; text-align: left;">Sandstorm</h3>
-					<div class="line">
-						<label for="cross">Crossed Line?</label><br>
-						<label id="yesLabel" for="yes" style>Yes</label>
-						<input type="radio" name="cross" id="yes" value="yes">
-						<label id="noLabel" for="no">No</label>
-						<input type="radio" name="cross" id="no" value="no">
+				<div class="sandstorm" style="margin-left:auto;margin-right:auto;">
+					<h3 style="text-decoration: underline;">Teleop</h3>
+					<br>
+					<div class="telehatch">
+						<button id="decHatch" class="mainbutton" type="button">-Hatch-</button>
+						<label id="hatchCount" for="-Hatch-">0</label>
+						<button id="incHatch" class="mainbutton" type="button">+Hatch+</button>
 					</div>
 					<br>
-					<div class="autohatch">
-						<button id="decAutoHatch" class="mainbutton" type="button">-Hatch-</button>
-						<label id="hatchAutoCount" for="-Hatch-">0</label>
-						<button id="incAutoHatch" class="mainbutton" type="button">+Hatch+</button>
+					<div class="telecargo">
+						<button id="decCargo" class="mainbutton" type="button">-Cargo-</button>
+						<label id="cargoCount" for="-Cargo-">0</label>							
+						<button id="incCargo" class="mainbutton" type="button">+Cargo+</button>
 					</div>
-					<br>
-					<div class="autocargo">
-						<button id="decAutoCargo" class="mainbutton" type="button">-Cargo-</button>
-						<label id="cargoAutoCount" for="-Hatch-">0</label>
-						<button id="incAutoCargo" class="mainbutton" type="button">+Cargo+</button>
-					</div>	
 				</div>
 				<div class="teleop" style="margin-left:auto;margin-right:auto;">
 					<h3 style="text-decoration: underline;">Teleop</h3>
