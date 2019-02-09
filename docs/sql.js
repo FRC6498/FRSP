@@ -1,12 +1,18 @@
 const sqlite3 = require('sqlite3').verbose();
-let db = new sqlite3.Database(':memory:', (err) => {
-  if(err) {
-    return Console.Log(err.message);
-  }
-  console.log('Connected to the in-memory SQLite database');
-});
+const path = './db/frsp.db';
 
-// do everything here
+let db = new sqlite3.Database(path, (err) => {
+    if(err) 
+    {
+        return Console.Log(err.message);
+    }
+    console.log('Connected to the SQLite database');
+  });
+
+db.serialize(() => 
+{
+    db.
+})
 
 db.close((err) => {
   if(err) {
