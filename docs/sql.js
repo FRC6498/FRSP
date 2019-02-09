@@ -9,10 +9,21 @@ let db = new sqlite3.Database(path, (err) => {
     console.log('Connected to the SQLite database');
   });
 
-db.serialize(() => 
+db.parallelize(() => 
 {
-    db.
-})
+    db.serialize(() =>
+    {
+        //Create parent table
+        db.run('CREATE TABLE frspScout(Team SMALLINT, 
+                                       Match SMALLINT, 
+                                       CrossedLine ENUM('Yes', 'No'),
+                                       StartLevel ENUM('1', '2', '3'),
+                                        
+                         )');
+        db.run(`INSERT INTO frsp1a(Team, Match)
+                VALUES(6498, 1)');  
+    });
+});
 
 db.close((err) => {
   if(err) {
@@ -20,3 +31,6 @@ db.close((err) => {
   }
   console.log('Close the database connection.');
 });
+
+
+function addPacket(team, match, sand);
