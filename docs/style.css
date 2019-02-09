@@ -45,10 +45,9 @@ input[type="radio"] {
 	font-size: 1.5vw;
 }
 .sandstorm{
-	text-align: left;
+	text-align: center;
 	display: inline-block;
 	font-size: 1.9vw;
-	font-style: bold;
 	width: 33%;
 }
 
