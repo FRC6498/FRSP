@@ -14,14 +14,8 @@ db.parallelize(() =>
     db.serialize(() =>
     {
         //Create parent table
-        db.run('CREATE TABLE frspScout(Team SMALLINT, 
-                                       Match SMALLINT, 
-                                       CrossedLine ENUM('Yes', 'No'),
-                                       StartLevel ENUM('1', '2', '3'),
-                                        
-                         )');
-        db.run(`INSERT INTO frsp1a(Team, Match)
-                VALUES(6498, 1)');  
+        db.run('CREATE TABLE frspScout(Team SMALLINT, Match SMALLINT, CrossedLine ENUM("Yes", "No"), StartLevel ENUM("1", "2", "3"))');
+        db.run(`INSERT INTO frsp1a(Team, Match) VALUES(6498, 1);`);  
     });
 });
 
