@@ -4,7 +4,7 @@ if(!window.indexedDB)
 }
 
 //Open sesame
-var db;
+var dbs;
 var request = window.indexedDB.open("frsp");
 
 request.onerror = function(event) {
@@ -12,11 +12,16 @@ request.onerror = function(event) {
     alert("ree y u no let me use indexedDeeBeeeeeeeee");
 };
 
-db.onerror = function(event) {
+dbs.onerror = function(event) {
     alert("Databwase Error owo:" + event.target.errorCode);
 }
 request.onsuccess = function(event) {
     //yes
     console.log("[FRSP]: we did it boys");
-    db = event.target.result;
+    dbs = event.target.result;
+};
+
+request.onupgradeneeded = function(event) {
+    var db = event.target.result;
+    var objectStore = db.createOjectStore("name", {keyPath: "key"});
 };
