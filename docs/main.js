@@ -21,3 +21,46 @@ function Start()
 }
 
 window.onload = Start;
+
+//this is an object
+var item = {
+    team: 6498, 
+    match: 001,
+    sandstorm: {
+        line: false,
+        hatches: {
+            high: 0,
+            mid: 0,
+            low: 0
+        },
+        cargo: {
+            high: 0,
+            mid: 0,
+            low: 0
+        }
+    },
+    teleop: {
+        hatches: {
+            high: 0,
+            mid: 0,
+            low: 0
+        },
+        cargo: {
+            high: 0,
+            mid: 0,
+            low: 0
+        }
+    },
+    endgame: {
+        hatches: {
+            high: 0,
+            mid: 0,
+            low: 0
+        },
+        cargo: {
+            high: 0,
+            mid: 0,
+            low: 0
+        }
+    }
+};
