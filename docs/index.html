@@ -1,0 +1,80 @@
+<html lang="en-us">
+	<head>
+		<title>First Robotics Scouting Program</title>
+	   <link rel="stylesheet" href="style.css">
+	   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:bold"> -->
+	   <script src="main.js"></script>
+	   <meta charset="utf-8">
+	   <meta name="author" content="EJ Braswell and Ryan Maxwell">
+	   <meta name="description" content="A web-based scouting program designed to run locally via network hub and work on almost all browsers">
+   </head>
+	<body onload="Start()">
+		<header>
+			<h1 class="title">First Robotics Scouting Program</h1>
+			<div class="info">
+					<span id="teamtag">
+						<label for="team">Team Number: </label>
+						<input type="text" name="team">
+					</span>
+					<span id="matchtag">
+						<label for="match">Match Number: </label>
+						<input type="text" name="match">
+					</span>
+				</div>
+		</header>
+		<div id="container">
+			<div class="sandstorm">
+				<h4>sandstorm</h4>
+				<div class="crossline">
+					<label for="cross">Crossed Line?</label><br>
+					<label for="yes">Yes</label>
+					<input type="radio" name="cross" id="yes" value="yes">
+					<label for="no">No</label>
+					<input type="radio" name="cross" id="no" value="no">
+				</div>
+				<div class="anihatch">
+					<button type="button" onclick="increment(hatchInc)">-Hatch-</button>
+					<button type="button">+Hatch+</button>
+					<label id="hatchInc" for="-Hatch-">0</label>
+				</div>
+				<div class="anicargo">
+					<button type="button">-Cargo-</button>
+					<button type="button">+Cargo+</button>
+					<label for="+cargo+">0</label>
+				</div>
+			</div>
+			<div class="teleop">
+				<h4>Teleop</h4>
+				<div class="hatches">
+					<h5>Hatches</h5>
+					<button type="button">-Top-</button>
+					<button type="button" onclick="buttonClick()">+Top+</button>
+					<label id="tHatch" for="+Top+">0</label>
+					<br>
+					<button type="button">-Mid-</button>
+					<button type="button">+Mid+</button>
+					<label for="+Mid+">0</label>
+					<br>
+					<button type="button">-Low-</button>
+					<button type="button">+Low+</button>
+					<label >0</label>
+				</div>
+				<div class="cargo">
+					<h5>Cargo</h5>
+					<button type="button">-Top-</button>
+					<button type="button">+Top+</button>
+					<label id="teleCargoTop">0</label>
+					<br>
+					<button type="button">-Mid-</button>
+					<button type="button">+Mid+</button>
+					<label id="teleCargoMid">0</label>
+					<br>
+					<button type="button">-Low-</button>
+					<button type="button">+Low+</button>
+					<label id="teleCargoLow">0</label>
+				</div>
+			</div>
+		</div>
+  </body>
+</html>
