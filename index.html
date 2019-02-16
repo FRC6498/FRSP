@@ -26,13 +26,7 @@
 		<div id="container">
 			<div class="sandstorm column">
 				<h4>sandstorm</h4>
-				<div class="crossline">
-					<label for="cross">Crossed Line?</label><br>
-					<label for="yes">Yes</label>
-					<input type="radio" name="cross" id="yes" value="yes">
-					<label for="no">No</label>
-					<input type="radio" name="cross" id="no" value="no">
-				</div>
+				
 				<div class="hatches">
 					<h5>Hatches</h5>
 					<button type="button">-Top-</button>
@@ -45,7 +39,7 @@
 					<br>
 					<button type="button">-Low-</button>
 					<label id="sandHatchLow">0</label>
-					<button type="button">+Low+</button>
+					<button type="button" onclick="incrementValue('sandHatchLow')">+Low+</button>
 				</div>
 				<div class="cargo">
 					<h5>Cargo</h5>
@@ -60,6 +54,14 @@
 					<button type="button">-Low-</button>
 					<label id="sandCargoLow">0</label>
 					<button type="button">+Low+</button>
+				</div>
+				<br>
+				<div class="crossline">
+					<label for="cross">Crossed Line?</label><br>
+					<label for="yes">Yes</label>
+					<input type="radio" name="cross" id="yes" value="yes">
+					<label for="no">No</label>
+					<input type="radio" name="cross" id="no" value="no">
 				</div>
 			</div>
 			<div class="teleop column">

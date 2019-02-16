@@ -1,11 +1,7 @@
 // issac and/or isaac feel free to do everything here thanks
-//did you know:
-//Luna was the name of the Soviet program that launched over 25 probes to the Moon.
-//Venera lanched 9 probes to Venus, 2 of which landed.
-//haha nice cOMMunIsM
-//u wearin socks bud? no? u gay lol. 
-//haha yes thhats rught o, "buddy" guy
-startMsg = new String("FIRST RSP STARTED");
+var startMsg = "FRSP STARTED";
+var newVal;
+var ele;
 
 function Log(msg)
 {
@@ -17,7 +13,22 @@ function Log(msg)
 function Start()
 {
     Log(startMsg);
-    //alert("FIRST RSP STARTED");
+    alert("FIRST RSP STARTED");
 }
 
 window.onload = Start;
+
+incrementValue(id) 
+{
+    if(id == typeof(String))
+    {
+        var val = parseInt(document.getElementById(id).value, 10);
+        val = isNaN(val) ? 0 : val;
+        val++;
+        document.getElementById(id).value = val;
+    }
+    else
+    {
+        throw new TypeError("[FRSP] The id provided was not a string");
+    }
+}

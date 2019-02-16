@@ -37,9 +37,9 @@ input[type="radio"] {
 	margin-top: 15%;
 }
 button { 
-	-moz-transform: scale(1.4);
-	-ms-transform: scale(1.4);
-	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.8);
+	-ms-transform: scale(1.8);
+	-webkit-transform: scale(1.8);
 }
 .info {
 	margin-left: 25%;
@@ -55,10 +55,6 @@ button {
 }
 
 #hatchCount,#cargoCount {
-	margin-left: 25px;
-}
-
-#incHatch,#incCargo {
 	margin-left: 25px;
 }
 
@@ -90,7 +86,11 @@ button {
 #submitButton {
 	margin-left: 45%;
 	margin-right: 55%;
-	margin-bottom: 2%;
+	margin-bottom: 4%; 
 	width: 10%;
 	height: 5%;
+}
+
+.crossline {
+	margin-bottom: 3%;
 }
