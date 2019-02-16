@@ -21,6 +21,7 @@ h1 {
 }
 
 input[type="radio"] {
+	-moz-transform: scale(2);
 	-ms-transform: scale(2);
 	-webkit-transform: scale(2);
 }
@@ -36,6 +37,7 @@ input[type="radio"] {
 	margin-top: 15%;
 }
 button { 
+	-moz-transform: scale(1.4);
 	-ms-transform: scale(1.4);
 	-webkit-transform: scale(1.4);
 }
@@ -83,4 +85,12 @@ button {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+#submitButton {
+	margin-left: 45%;
+	margin-right: 55%;
+	margin-bottom: 2%;
+	width: 10%;
+	height: 5%;
 }
