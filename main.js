@@ -18,17 +18,14 @@ function Start()
 
 window.onload = Start;
 
-incrementValue(id) 
-{
-    if(id == typeof(String))
-    {
+function incrementValue(id) {
+    if(id == typeof(String)) {
         var val = parseInt(document.getElementById(id).value, 10);
         val = isNaN(val) ? 0 : val;
         val++;
         document.getElementById(id).value = val;
     }
-    else
-    {
+    else {
         throw new TypeError("[FRSP] The id provided was not a string");
     }
 }
