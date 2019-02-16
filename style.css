@@ -2,7 +2,7 @@
 
 /* CSS Document */
 
-body{
+body {
     background-color: Black;
     color: #ffffff;
 	/* font-family: Open Sans; */
@@ -35,34 +35,31 @@ input[type="radio"] {
 	margin-right: 50%;
 	margin-top: 15%;
 }
-.enter > button{ 
-	-ms-transform: scale(2);
-	-webkit-transform: scale(2);
+button { 
+	-ms-transform: scale(1.4);
+	-webkit-transform: scale(1.4);
 }
-.info{
+.info {
 	margin-left: 25%;
 	margin-right: 25%;
 	font-size: 1.5vw;
 }
-.sandstorm{
+
+.sandstorm, .teleop, .endgame {
 	text-align: center;
 	display: inline-block;
 	font-size: 1.9vw;
 	width: 33%;
 }
 
-.teleop {
-	text-align: center;
-	display: inline-block;
-	font-size: 1.9vw;
-	width: 33%;
-}
 #hatchCount,#cargoCount {
 	margin-left: 25px;
 }
+
 #incHatch,#incCargo {
 	margin-left: 25px;
 }
+
 .line {
 	font-style: bold;
 	text-decoration: none !important;
@@ -75,4 +72,15 @@ input[type="radio"] {
 
 #yesLabel,#noLabel {
 	font-style: italic;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }

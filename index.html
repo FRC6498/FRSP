@@ -33,15 +33,33 @@
 					<label for="no">No</label>
 					<input type="radio" name="cross" id="no" value="no">
 				</div>
-				<div class="anihatch">
-					<button type="button" onclick="increment(hatchInc)">-Hatch-</button>
-					<button type="button">+Hatch+</button>
-					<label id="hatchInc" for="-Hatch-">0</label>
+				<div class="hatches">
+					<h5>Hatches</h5>
+					<button type="button">-Top-</button>
+					<label id="sandHatchTop">0</label>
+					<button type="button" onclick="buttonClick()">+Top+</button>
+					<br>
+					<button type="button">-Mid-</button>
+					<label id="sandHatchMid">0</label>
+					<button type="button">+Mid+</button>
+					<br>
+					<button type="button">-Low-</button>
+					<label id="sandHatchLow">0</label>
+					<button type="button">+Low+</button>
 				</div>
-				<div class="anicargo">
-					<button type="button">-Cargo-</button>
-					<button type="button">+Cargo+</button>
-					<label for="+cargo+">0</label>
+				<div class="cargo">
+					<h5>Cargo</h5>
+					<button type="button">-Top-</button>
+					<label id="sandCargoTop">0</label>
+					<button type="button">+Top+</button>
+					<br>
+					<button type="button">-Mid-</button>
+					<label id="sandCargoMid">0</label>
+					<button type="button">+Mid+</button>
+					<br>
+					<button type="button">-Low-</button>
+					<label id="sandCargoLow">0</label>
+					<button type="button">+Low+</button>
 				</div>
 			</div>
 			<div class="teleop column">
@@ -49,30 +67,30 @@
 				<div class="hatches">
 					<h5>Hatches</h5>
 					<button type="button">-Top-</button>
+					<label id="teleHatchTop">0</label>
 					<button type="button" onclick="buttonClick()">+Top+</button>
-					<label id="tHatch" for="+Top+">0</label>
 					<br>
 					<button type="button">-Mid-</button>
+					<label id="teleHatchMid">0</label>
 					<button type="button">+Mid+</button>
-					<label for="+Mid+">0</label>
 					<br>
 					<button type="button">-Low-</button>
+					<label id="teleHatchLow">0</label>
 					<button type="button">+Low+</button>
-					<label >0</label>
 				</div>
 				<div class="cargo">
 					<h5>Cargo</h5>
 					<button type="button">-Top-</button>
-					<button type="button">+Top+</button>
 					<label id="teleCargoTop">0</label>
+					<button type="button">+Top+</button>
 					<br>
 					<button type="button">-Mid-</button>
-					<button type="button">+Mid+</button>
 					<label id="teleCargoMid">0</label>
+					<button type="button">+Mid+</button>
 					<br>
 					<button type="button">-Low-</button>
-					<button type="button">+Low+</button>
 					<label id="teleCargoLow">0</label>
+					<button type="button">+Low+</button>
 				</div>
 			</div>
 			<div class="endgame column">
@@ -80,30 +98,31 @@
 				<div class="hatches">
 					<h5>Hatches</h5>
 					<button type="button">-Top-</button>
+					<label id="endHatchTop">0</label>
 					<button type="button">+Top+</button>
-					<label id="endgameHatchTop">0</label>
 					<br>
 					<button type="button">-Mid-</button>
+					<label id="endgameHatchMid">0</label>
 					<button type="button">+Mid+</button>
-					<label for="+Mid+">0</label>
 					<br>
 					<button type="button">-Low-</button>
+					<label id="endgameHatchLow">0</label>
 					<button type="button">+Low+</button>
-					<label >0</label>
 				</div>
 				<div class="cargo">
 					<h5>Cargo</h5>
 					<button type="button">-Top-</button>
+					<label id="endCargoTop">0</label>
 					<button type="button">+Top+</button>
-					<label id="teleCargoTop">0</label>
 					<br>
 					<button type="button">-Mid-</button>
+					<label id="endCargoMid">0</label>
 					<button type="button">+Mid+</button>
-					<label id="teleCargoMid">0</label>
 					<br>
 					<button type="button">-Low-</button>
+					<label id="endCargoLow">0</label>
 					<button type="button">+Low+</button>
-					<label id="teleCargoLow">0</label>
+					
 				</div>
 			</div>
 		</div>
