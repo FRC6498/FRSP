@@ -45,10 +45,9 @@ input[type="radio"] {
 	font-size: 1.5vw;
 }
 .sandstorm{
-	text-align: left;
+	text-align: center;
 	display: inline-block;
 	font-size: 1.9vw;
-	font-style: bold;
 	width: 33%;
 }
 
@@ -69,12 +68,7 @@ input[type="radio"] {
 	text-decoration: none !important;
 }
 
-.autohatch > button{ 
-	-ms-transform: scale(2);
-	-webkit-transform: scale(2);
-}
-
-.autocargo > button{ 
+.mainbutton { 
 	-ms-transform: scale(2);
 	-webkit-transform: scale(2);
 }

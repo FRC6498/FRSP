@@ -11,7 +11,7 @@
 		<meta name="author" content="EJ Braswell and Ryan Maxwell">
 		<meta name="description" content="A web-based scouting program designed to run locally via network hub and work on almost all browsers">
 	</head>
-	<body>
+	<body onload="Start()">
 		<header>
 			<h1 class="title">First Robotics Scouting Program</h1>
 			<div class="info">
@@ -37,31 +37,31 @@
 						<input type="radio" name="cross" id="no" value="no">
 					</div>
 					<br>
-					<div class="autohatch">
-						<button id="decAutoHatch" type="button">-Hatch-</button>
-						<label id="hatchAutoCount" for="-Hatch-">0</label>
-						<button id="incAutoHatch" type="button">+Hatch+</button>
+					<div class="telehatch">
+						<button id="decHatch" class="mainbutton" type="button">-Hatch-</button>
+						<label id="hatchCount" for="-Hatch-">0</label>
+						<button id="incHatch" class="mainbutton" type="button">+Hatch+</button>
 					</div>
 					<br>
-					<div class="autocargo">
-						<button id="decAutoCargo" type="button">-Cargo-</button>
-						<label id="cargoAutoCount" for="-Hatch-">0</label>
-						<button id="incAutoCargo" type="button">+Cargo+</button>
-					</div>	
+					<div class="telecargo">
+						<button id="decCargo" class="mainbutton" type="button">-Cargo-</button>
+						<label id="cargoCount" for="-Cargo-">0</label>							
+						<button id="incCargo" class="mainbutton" type="button">+Cargo+</button>
+					</div>
 				</div>
 				<div class="teleop column" style="margin-left:auto;margin-right:auto;">
 					<h3 style="text-decoration: underline;">Teleop</h3>
 					<br>
 					<div class="telehatch">
-						<button id="decHatch" type="button">-Hatch-</button>
+						<button id="decHatch" class="mainbutton" type="button">-Hatch-</button>
 						<label id="hatchCount" for="-Hatch-">0</label>
-						<button id="incHatch" type="button">+Hatch+</button>
+						<button id="incHatch" class="mainbutton" type="button">+Hatch+</button>
 					</div>
 					<br>
 					<div class="telecargo">
-						<button id="decCargo" type="button">-Cargo-</button>
+						<button id="decCargo" class="mainbutton" type="button">-Cargo-</button>
 						<label id="cargoCount" for="-Cargo-">0</label>							
-						<button id="incCargo" type="button">+Cargo+</button>
+						<button id="incCargo" class="mainbutton" type="button">+Cargo+</button>
 					</div>
 				</div>
 				<div class="endgame column" style="margin-left:auto;margin-right:auto;">
