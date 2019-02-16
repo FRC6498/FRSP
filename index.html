@@ -24,7 +24,7 @@
 				</div>
 		</header>
 		<div id="container">
-			<div class="sandstorm">
+			<div class="sandstorm column">
 				<h4>sandstorm</h4>
 				<div class="crossline">
 					<label for="cross">Crossed Line?</label><br>
@@ -44,7 +44,7 @@
 					<label for="+cargo+">0</label>
 				</div>
 			</div>
-			<div class="teleop">
+			<div class="teleop column">
 				<h4>Teleop</h4>
 				<div class="hatches">
 					<h5>Hatches</h5>
@@ -58,7 +58,7 @@
 					<br>
 					<button type="button">-Low-</button>
 					<button type="button">+Low+</button>
-					<label for="+Low+">0</label>
+					<label >0</label>
 				</div>
 				<div class="cargo">
 					<h5>Cargo</h5>
@@ -72,7 +72,38 @@
 					<br>
 					<button type="button">-Low-</button>
 					<button type="button">+Low+</button>
-					<label for="+Low+">0</label>
+					<label id="teleCargoLow">0</label>
+				</div>
+			</div>
+			<div class="endgame column">
+				<h4>Endgame</h4>
+				<div class="hatches">
+					<h5>Hatches</h5>
+					<button type="button">-Top-</button>
+					<button type="button">+Top+</button>
+					<label id="endgameHatchTop">0</label>
+					<br>
+					<button type="button">-Mid-</button>
+					<button type="button">+Mid+</button>
+					<label for="+Mid+">0</label>
+					<br>
+					<button type="button">-Low-</button>
+					<button type="button">+Low+</button>
+					<label >0</label>
+				</div>
+				<div class="cargo">
+					<h5>Cargo</h5>
+					<button type="button">-Top-</button>
+					<button type="button">+Top+</button>
+					<label id="teleCargoTop">0</label>
+					<br>
+					<button type="button">-Mid-</button>
+					<button type="button">+Mid+</button>
+					<label id="teleCargoMid">0</label>
+					<br>
+					<button type="button">-Low-</button>
+					<button type="button">+Low+</button>
+					<label id="teleCargoLow">0</label>
 				</div>
 			</div>
 		</div>

@@ -1,1 +1,3 @@
-var item
+var item = {
+    
+};
