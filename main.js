@@ -24,8 +24,7 @@ function incrementValue(id) {
         val = isNaN(val) ? 0 : val;
         val++;
         document.getElementById(id).value = val;
-    }
-    else {
+    } else {
         throw new TypeError("[FRSP] The id provided was not a string");
     }
 }
